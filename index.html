@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preethi Chunduri - Software Developer">
     <link rel="shortcut icon" href="favicon.ico">  
     
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -25,9 +26,82 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head> 
+<style>
+.mySlides {display:none;}
+</style>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
 <body>
     <!-- ******HEADER****** --> 
     <header class="header">
@@ -43,7 +117,8 @@
             
         </div><!--//container-->
     </header><!--//header-->
-    
+   
+
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-lg-8 col-12">
@@ -61,11 +136,61 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest Projects</h2>
                         <div class="content">    
-                                               
-                            <div class="item featured text-center">
+                              
+						<div class="w3-content" style="max-width:800px">
+						
+						<div class="mySlides">
+						  <div class="item featured text-center">
                                 
                                 <div class="featured-image has-ribbon">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.jpg" alt="project name" />
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project3.png" alt="project name" />
+                                    
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="title mb-3">IMPROVING FACULTY PEDAGOGY THROUGH USE OF ARTIFICIAL INTELLIGENCE- A STUDENT ENGAGEMENT FACILITATION TOOL (Ongoing)</h3>
+                                    
+                                <div class="desc text-left">                                    
+                                <p>While the learning requirements intensify each year, the faculty face challenges in engaging
+								students in higher education classes. Changing learning patterns and lowering spans of attention
+								of higher education students are presenting challenges for faculty in holding students’ attention,
+								balancing the use of technology and real learning, and keeping students engaged in classes to
+								make learning stick for long. A self-assessment tool that can help faculty identify (i) the level at
+								which their present pedagogy is engaging students and; (ii) which pedagogical modifications can
+								enhance student engagement in their classes, can immensely support faculty efforts to strengthen
+								learning outcomes for students across class formats and disciplines.</p>
+								<h6>Roles & Responsibilities:</h4>                 
+								<p>As a team member, major involvement was in following tasks:</p>
+								<ul>
+								<li>Gathering the data for training data set.</li>
+								<li>Data is trained to apply machine learning techniques.</li>
+								<li>Libraries like NLTK, TensorFlow, SKLearn have been incorporated in the code to verify the accuracy of predicted data .</li>
+								<li>Set up AWS server and integrate the PHP and Python codes.</li>
+								
+								
+								
+								</ul>	
+								<h6>Client:</h4>                 
+								<p>Eastern Michigan University</p>
+								<h6>Skills:</h6> 
+								<ul>
+								<li>Python</li>
+								<li>PHP</li>
+								<li>Machine Learning - TensorFlow, SKlearn, Textblob, NLTK</li>
+								</ul>    
+                                </div><!--//desc-->         
+                                
+                            </div><!--//item-->
+						  </div>
+						
+						
+						<div class="mySlides">
+						<div class="item featured text-center">
+                                
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/image.png" alt="project name" />
                                     
                                     <div class="ribbon">
                                         <div class="text">New</div>
@@ -84,8 +209,9 @@
 								<li>Cleaning the data to perform machine learning techniques</li>
 								
 								</ul>      	
-								<h6>Client & Skills:</h4>                 
-								<p>Client: University of Michigan</p>
+								<h6>Client:</h6>                 
+								<p>University of Michigan</p>
+								<h6>Skills:</h6>    
 								<ul>
 								<li>Python: Pandas</li>
 								<li>Machine Learning Techniques</li>
@@ -93,8 +219,13 @@
                                 </div><!--//desc-->         
                                            
                             </div><!--//item-->
+							
                             <hr class="divider" />
-                            <div class="item featured text-center">
+							</div>
+							
+						  
+						  <div class="mySlides">
+						  <div class="item featured text-center">
                                 
                                 <div class="featured-image has-ribbon">
                                     <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.jpg" alt="project name" />
@@ -118,8 +249,9 @@
 								
 								
 								</ul>	
-								<h6>Client & Skills:</h4>                 
-								<p>Client: Eastern Michigan University</p>
+								<h6>Client:</h6>                 
+								<p>Eastern Michigan University</p>
+								<h6>Skills:</h6>   
 								<ul>
 								<li>Cassandra</li>
 								<li>Java</li>
@@ -129,40 +261,56 @@
                             </div><!--//item-->
 							
 							<hr class="divider" />
-                            <div class="item featured text-center">
-                                
-                                <div class="featured-image has-ribbon">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.jpg" alt="project name" />
-                                    
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div>
-                                </div>
-                                
-                                <h3 class="title mb-3">IMPROVING FACULTY PEDAGOGY THROUGH USE OF ARTIFICIAL INTELLIGENCE- A STUDENT ENGAGEMENT FACILITATION TOOL (Ongoing)</h3>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p>As organizations need to store increasingly large amounts of data about relationships between entities, there is a growing need in scalable graph data management techniques using NoSQL. This project will investigate schema and query mappings for graph data for column family stores, such as HBase and Accumulo, and Cassandra.</p>
-								<h6>Roles & Responsibilities:</h4>                 
-								<p>As a team member, major involvement was in following tasks:</p>
-								<ul>
-								<li>Set up AWS Ubuntu server and different cluster nodes with Cassandra DB.</li>
-								<li>Provenance graphs and converting them into RDF n-triple format files</li>
-								<li>Implementing Java program to interact with Cassandra DB</li>
-								<li>Once the graph data is given, the Java program should give us the ancestors and descendants for the vertices given. </li>
-								
-								
-								</ul>	
-								<h6>Client & Skills:</h4>                 
-								<p>Client: Eastern Michigan University</p>
-								<ul>
-								<li>Python</li>
-								<li>PHP</li>
-								<li>Machine Learning</li>
-								</ul>    
-                                </div><!--//desc-->         
-                                
-                            </div><!--//item-->
+						  </div>
+						  
+						  
+						  
+						</div>
+
+						<div class="w3-center">
+						  <div class="w3-section">
+							<button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+							<button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+						  </div>
+						  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+						  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+						  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+						</div>
+
+							<script>
+							var slideIndex = 1;
+							showDivs(slideIndex);
+
+							function plusDivs(n) {
+							  showDivs(slideIndex += n);
+							}
+
+							function currentDiv(n) {
+							  showDivs(slideIndex = n);
+							}
+
+							function showDivs(n) {
+							  var i;
+							  var x = document.getElementsByClassName("mySlides");
+							  var dots = document.getElementsByClassName("demo");
+							  if (n > x.length) {slideIndex = 1}    
+							  if (n < 1) {slideIndex = x.length}
+							  for (i = 0; i < x.length; i++) {
+								x[i].style.display = "none";  
+							  }
+							  for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" w3-green", "");
+							  }
+							  x[slideIndex-1].style.display = "block";  
+							  dots[slideIndex-1].className += " w3-green";
+							}
+							</script>
+	
+							
+									
+                            
+                            
+                            
                             
         
                             
@@ -231,13 +379,11 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
-                            <p class="intro">
-                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Github profile so people can get more info there.</p>
                             
                             <div class="skillset">
                                
                                 <div class="item">
-                                    <h3 class="level-title">Python <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <a href="#latest section"><h3 class="level-title">Python <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3></a>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="96%">
                                         </div>                                      
@@ -315,11 +461,11 @@
                         <div class="content">
                             <div class="item">                      
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc Computer Science</h3>
-                                <h4 class="university">Eastern Michigan University <span class="year">(2019-2020)</span></h4>
+                                <h4 class="university">Eastern Michigan University, Michigan <span class="year">(2019-2020)</span></h4>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> B.E Computer Science</h3>
-                                <h4 class="university">University of Bristol <span class="year">(2003-2007)</span></h4>
+                                <h4 class="university">Osmania University, Hyderabad, India <span class="year">(2003-2007)</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
